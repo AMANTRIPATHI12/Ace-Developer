@@ -1,8 +1,8 @@
 import React, { useState, useEffect, Suspense } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
-const About = React.lazy(() => import('./components/About')); // Lazy load
+const About = React.lazy(() => import("./components/About")); // Lazy load
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
@@ -17,7 +17,7 @@ function App() {
   }, []);
 
   return (
-    <>
+    <BrowserRouter basename="/Ace-Developer">
       {loading ? (
         <LoadingScreen onFinish={() => setLoading(false)} />
       ) : (
@@ -31,11 +31,10 @@ function App() {
               <Route path="/projects" element={<Projects />} />
             </Routes>
           </Suspense>
-          <Home />
           <Footer />
         </>
       )}
-    </>
+    </BrowserRouter>
   );
 }
 
