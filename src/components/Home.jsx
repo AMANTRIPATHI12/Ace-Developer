@@ -5,7 +5,7 @@ const Home = () => {
     <section className="relative w-full h-screen overflow-hidden">
       {/* Background Image */}
       <img
-        src="/images/Home.webp"
+        src="./images/Home.webp"
         alt="Ace Developer Background"
         loading="eager"
         className="absolute inset-0 w-full h-full object-cover z-0"
