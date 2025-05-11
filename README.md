@@ -1,12 +1,30 @@
-# React + Vite
+# Ace Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website built using **React**, **Vite**, and **Tailwind CSS**. This site showcases my projects, skills, and includes an option to download my resume.
 
-Currently, two official plugins are available:
+## 🌐 Live Site
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> [https://your-deployed-site-link.com](https://your-deployed-site-link.com) ← Replace with actual link after hosting.
 
-## Expanding the ESLint configuration
+## 📦 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React (Vite)
+- Tailwind CSS
+- HTML5 & CSS3
+- Git & GitHub
+
+## 🛠 Features
+
+- Fully responsive layout
+- Smooth scroll and modern UI
+- View projects and skills
+- Resume download option
+- Contact via email
+
+## 📂 Installation
+
+```bash
+git clone https://github.com/AMANTRIPATHI12/Ace-Developer.git
+cd Ace-Developer
+npm install
+npm run dev
