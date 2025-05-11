@@ -5,6 +5,6 @@ import viteCompression from 'vite-plugin-compression';
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(),tailwindcss(),viteCompression()],
-  base: '/Ace-Developer/',
+  plugins: [react(), tailwindcss(), viteCompression()],
+  base: '/Ace-Developer/', // Ensures correct paths after deployment
 })
