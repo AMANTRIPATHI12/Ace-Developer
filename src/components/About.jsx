@@ -1,5 +1,6 @@
 import React from "react";
 import profileImage from "/images/Aman.webp";
+import resume from "/resume/Aman_resume.pdf";
 
 const About = () => {
   return (
@@ -65,7 +66,7 @@ const About = () => {
 
           <div className="flex justify-center lg:justify-start">
           <a
-            href="/resume/Aman_Resume.pdf"
+            href={resume}
             download
             aria-label="Download Aman Tripathi's CV"
             className="bg-violet-600 text-white py-3 px-6 rounded-lg hover:bg-violet-700 transition duration-300"
