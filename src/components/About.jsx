@@ -64,13 +64,15 @@ const About = () => {
           </div>
 
           <div className="flex justify-center lg:justify-start">
-            <a
-              href="/path/to/your/cv.pdf"
-              download
-              className="bg-violet-600 text-white py-3 px-6 rounded-lg hover:bg-violet-700 transition duration-300"
-            >
-              Download CV
-            </a>
+          <a
+            href="/Aman_Resume.pdf"
+            download
+            aria-label="Download Aman Tripathi's CV"
+            className="bg-violet-600 text-white py-3 px-6 rounded-lg hover:bg-violet-700 transition duration-300"
+          >
+            Download CV
+          </a>
+
           </div>
         </div>
       </div>
