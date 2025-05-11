@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="preload" href="path/to/your/critical-resource.js" as="script">
+    <link rel="preload" href="path/to/your/critical-font.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
     <meta charset="UTF-8" />
 
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
@@ -26,5 +29,6 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script src="non-critical.js" async></script>
   </body>
 </html>
