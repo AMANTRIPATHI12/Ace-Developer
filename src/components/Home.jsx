@@ -1,11 +1,12 @@
 import React from "react";
+import Homeimg from "/images/Home.webp";
 
 const Home = () => {
   return (
     <section className="relative w-full h-screen overflow-hidden">
       {/* Background Image */}
       <img
-      src="/images/Home.webp"
+      src={Homeimg}
       alt="Ace Developer Background"
       loading="eager"
       className="absolute inset-0 w-full h-full object-cover z-0"
