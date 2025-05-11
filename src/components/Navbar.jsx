@@ -26,21 +26,14 @@ const Navbar = () => {
 
         {/* Mobile Hamburger */}
         <div className="md:hidden">
-          <button onClick={toggleMenu} className="text-lime-400 focus:outline-none">
+          <button onClick={toggleMenu} className="text-lime-400 focus:outline-none" 
+          aria-label={menuOpen ? "Close menu" : "Open menu"}>
             {menuOpen ? <HiX size={28} /> : <HiMenu size={28} />}
           </button>
         </div>
       </div>
 
-      {/* Mobile Menu */}
-      {menuOpen && (
-        <div className="md:hidden flex flex-col space-y-2 mt-3">
-          <NavLink to="/" label="Home" onClick={toggleMenu} />
-          <NavLink to="/about" label="About" onClick={toggleMenu} />
-          <NavLink to="/projects" label="Projects" onClick={toggleMenu} />
-          <NavLink to="/contact" label="Contact" onClick={toggleMenu} />
-        </div>
-      )}
+
     </nav>
   );
 };

@@ -14,7 +14,7 @@ const TeamMember = () => {
   return (
     <div className={styles.teamMember}>
       <img src={member.image} alt={member.name} />
-      <h1>{member.name}</h1>
+      <h2>{member.name}</h2>
       <p>{member.description}</p>
       <a href={member.resume} download className={styles.downloadButton}>
         Download Resume

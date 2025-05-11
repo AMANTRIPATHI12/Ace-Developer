@@ -28,14 +28,14 @@ const LoadingScreen = ({ onFinish }) => {
 
   return (
     <div className="fixed top-0 left-0 w-screen h-screen z-50 bg-zinc-900 flex items-center justify-center">
-      <motion.h1
+      <motion.h2
         className="text-4xl md:text-6xl font-bold text-violet-500 tracking-widest"
         variants={variants}
         initial="hidden"
         animate={controls}
       >
         Ace Developer
-      </motion.h1>
+      </motion.h2>
     </div>
   );
 };
