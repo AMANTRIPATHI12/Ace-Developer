@@ -5,5 +5,5 @@ import viteCompression from 'vite-plugin-compression'
 
 export default defineConfig({
   plugins: [react(), tailwindcss(), viteCompression()],
-  base: './', // ✅ For Netlify: Use relative path
+  base: '/Ace-Developer', // ✅ For Netlify: Use relative path
 })
