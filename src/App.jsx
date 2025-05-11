@@ -1,5 +1,5 @@
 import React, { useState, useEffect, Suspense } from "react";
-import { Route, Routes, BrowserRouter } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 const About = React.lazy(() => import("./components/About")); // Lazy load
@@ -17,7 +17,7 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter basename="/Ace-Developer">
+    <>
       {loading ? (
         <LoadingScreen onFinish={() => setLoading(false)} />
       ) : (
@@ -34,7 +34,7 @@ function App() {
           <Footer />
         </>
       )}
-    </BrowserRouter>
+    </>
   );
 }
 
