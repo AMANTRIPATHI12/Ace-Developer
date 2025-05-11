@@ -1,0 +1,22 @@
+{
+    "name": "Ace Developer",
+    "short_name": "AceDev",
+    "start_url": "/Ace-Developer/",
+    "display": "standalone",
+    "background_color": "#000000",
+    "theme_color": "#7C3AED",
+    "description": "Portfolio of Ace Developer - Showcasing skills, projects and contact info.",
+    "icons": [
+      {
+        "src": "/android-chrome-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/android-chrome-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  
