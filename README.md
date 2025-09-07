@@ -4,7 +4,7 @@ A personal portfolio website built using **React**, **Vite**, and **Tailwind CSS
 
 ## 🌐 Live Site
 
-> [https://your-deployed-site-link.com](https://your-deployed-site-link.com) ← Replace with actual link after hosting.
+> [Live Site](https://amantripathi12.github.io/Ace-Developer/).
 
 ## 📦 Tech Stack
 
