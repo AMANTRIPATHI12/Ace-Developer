@@ -22,7 +22,6 @@ const Navbar = () => {
           <NavLink to="/" label="Home" />
           <NavLink to="/about" label="About" />
           <NavLink to="/projects" label="Projects" />
-          <NavLink to="/contact" label="Contact" />
         </div>
 
         {/* Mobile Hamburger */}
@@ -43,7 +42,6 @@ const Navbar = () => {
           <NavLink to="/" label="Home" onClick={closeMenu} />
           <NavLink to="/about" label="About" onClick={closeMenu} />
           <NavLink to="/projects" label="Projects" onClick={closeMenu} />
-          <NavLink to="/contact" label="Contact" onClick={closeMenu} />
         </div>
       )}
     </nav>

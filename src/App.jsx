@@ -3,7 +3,6 @@ import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 const About = React.lazy(() => import("./components/About"));
-import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import LoadingScreen from "./components/Loader";
@@ -27,7 +26,6 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />} />
               <Route path="/projects" element={<Projects />} />
             </Routes>
           </Suspense>

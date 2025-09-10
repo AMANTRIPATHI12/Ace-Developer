@@ -1,6 +1,6 @@
 import React from "react";
-import profileImage from "/images/Aman.webp";
-import resume from "/resume/Aman_resume.pdf";
+import profileImage from "/Aman.webp";
+import resume from "/Aman Tripathi.pdf";
 
 const About = () => {
   return (

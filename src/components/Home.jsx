@@ -1,5 +1,5 @@
 import React from "react";
-import Homeimg from "/images/Home.webp";
+import Homeimg from "/Home.webp";
 
 const Home = () => {
   return (

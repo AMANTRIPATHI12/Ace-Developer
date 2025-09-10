@@ -2,38 +2,62 @@ import React from "react";
 
 const projects = [
   {
+    title: "GTA-6 Showcase Website",
+    description:
+      "A 3D landing page inspired by GTA-6 using React, Tailwind CSS, and Framer Motion. Built with responsive UI and deployed on Vercel.",
+    codeLink: "https://github.com/AMANTRIPATHI12/GTA-6",
+    liveLink: "https://gta-6-rho.vercel.app/",
+  },
+  {
+    title: "Movie Recommender System",
+    description:
+      "Built with React, Node.js, and TMDb API. Features trending, popular, and personalized recommendations with backend caching for speed.",
+    codeLink: "https://github.com/AMANTRIPATHI12/Movie-Recomender",
+    liveLink: "", // Add if deployed
+  },
+  {
+    title: "Weather Now App",
+    description:
+      "A React-based weather app using OpenWeather API. Includes location-based search, error handling, and mobile-first UI.",
+    codeLink: "https://github.com/AMANTRIPATHI12/weather-now-app",
+    liveLink: "https://weather-now-app-phi.vercel.app/",
+  },
+  {
     title: "Ace Developer (Portfolio Website)",
     description:
-      "A modern portfolio website built with React.js and Tailwind CSS to showcase my projects, skills, and resume. Responsive design optimized for all devices.",
+      "This portfolio website built with React and Tailwind CSS highlights my projects, resume, and skills. Fully responsive and hosted on GitHub Pages.",
     codeLink: "https://github.com/AMANTRIPATHI12/Ace-Developer",
-    liveLink: "https://your-portfolio-live-link.com", // Replace once deployed
+    liveLink: "https://amantripathi12.github.io/Ace-Developer/",
   },
   {
     title: "Student Record Manager (Java GUI)",
     description:
-      "A desktop Java Swing application for managing student records (Add, Update, Delete) with persistent file storage.",
-    codeLink: "https://github.com/AMANTRIPATHI12/DSA-Project/tree/main/StudentRecord",
+      "Java Swing desktop app for managing student records (Add, Update, Delete) with persistent file storage.",
+    codeLink:
+      "https://github.com/AMANTRIPATHI12/DSA-Project/tree/main/StudentRecord",
     liveLink: "",
   },
   {
     title: "Folder Sorter Script (Java Automation)",
     description:
-      "Java program to auto-organize files into folders by extension, improving desktop and downloads folder hygiene.",
+      "Java program to auto-organize files by extension. Helps manage clutter in downloads and desktop folders.",
     codeLink: "https://github.com/AMANTRIPATHI12/Folder-Sorter",
     liveLink: "",
   },
   {
     title: "SmartScheduler (Java PriorityQueue App)",
     description:
-      "A task prioritization app using Java's PriorityQueue to manage tasks by urgency. Includes Windows notifications.",
-    codeLink: "https://github.com/AMANTRIPATHI12/DSA-Project/tree/main/Smart%20Scheduler",
+      "Task management desktop app using Java’s PriorityQueue. Sorts tasks by urgency and includes Windows notifications.",
+    codeLink:
+      "https://github.com/AMANTRIPATHI12/DSA-Project/tree/main/Smart%20Scheduler",
     liveLink: "",
   },
   {
     title: "Expense Tracker (Java CLI App)",
     description:
-      "Java-based command-line tool for daily expense tracking with summaries and local file data persistence.",
-    codeLink: "https://github.com/AMANTRIPATHI12/DSA-Project/tree/main/Expense%20Tracker",
+      "Command-line Java app for tracking daily expenses with summary reports and file-based data persistence.",
+    codeLink:
+      "https://github.com/AMANTRIPATHI12/DSA-Project/tree/main/Expense%20Tracker",
     liveLink: "",
   },
 ];
@@ -54,7 +78,9 @@ const Projects = () => {
               <h3 className="text-xl text-lime-400 font-semibold mb-3">
                 {project.title}
               </h3>
-              <p className="text-gray-300 text-sm mb-6">{project.description}</p>
+              <p className="text-gray-300 text-sm mb-6">
+                {project.description}
+              </p>
               <div className="flex flex-wrap gap-4">
                 <a
                   href={project.codeLink}
@@ -64,7 +90,7 @@ const Projects = () => {
                 >
                   View Code
                 </a>
-                {project.liveLink ? (
+                {project.liveLink && (
                   <a
                     href={project.liveLink}
                     target="_blank"
@@ -73,7 +99,7 @@ const Projects = () => {
                   >
                     Live Demo
                   </a>
-                ) : null}
+                )}
               </div>
             </div>
           ))}
